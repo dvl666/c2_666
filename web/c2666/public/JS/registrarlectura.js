@@ -25,3 +25,16 @@ const cargarTmed = async()=>{
 
 cargarMed();
 cargarTmed();
+
+document.querySelector("#registrar-btn").addEventListener("click", ()=>{
+    let fecha = document.querySelector("#fecha-txt").value;
+    let hora = document.querySelector("#hora-txt").value;
+    let med = document.querySelector("#med-select").value;
+    let dir = document.querySelector("#dir-txt").value;
+    let tmed = document.querySelector("#tmed-select").value;
+    datos.fecha = fecha;
+    datos.hora = hora;
+    datos.med = med;
+    datos.dir = dir;
+    datos.tmed = tmed;
+});

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Consola;
 
 class ConsolasController extends Controller
 {
@@ -28,5 +29,13 @@ class ConsolasController extends Controller
        
         return $tmed;
 
+    }
+    public function getDatos(){
+        $dat = Consola::all();
+        return $dat;
+    }
+    public function crearDatos(){
+        $dat = new Consola();
+        $dat->
     }
 }

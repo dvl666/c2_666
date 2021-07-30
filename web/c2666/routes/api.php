@@ -22,3 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get("med/get", [ConsolasController::class, "getMed"]);
 
 Route::get("tmed/get", [ConsolasController::class, "getTmed"]);
+
+Route::get("666/get", [ConsolasController::class, "getDatos"]);
+
+Route::post("616/post", [ConsolasController::class, "crearDatos"]);
